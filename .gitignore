@@ -1,0 +1,57 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+*.dll
+*.exe
+*.app
+*.pdb
+*.cache
+*.mdb
+*.log
+*.vspscc
+
+## VS Code
+.vscode/
+
+## Rider
+.idea/
+
+## ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+## User secrets
+**/secrets.json
+
+## Entity Framework
+Migrations/
+
+## Logs
+*.log
+
+## Sensitive configs
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.json
+!appsettings.json
+
+## Dotnet tools
+.dotnet-tools/
+
+## Node modules (if used)
+node_modules/
+
+## Publish
+publish/
+*.db
+
+## Others
+*.nupkg
+*.snupkg
+*.tgz
+*.vs/
