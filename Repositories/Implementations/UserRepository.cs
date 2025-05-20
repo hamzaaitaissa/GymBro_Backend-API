@@ -20,7 +20,7 @@ namespace GymBro_Backend_API.Repositories.Implementations
             return user;
         }
 
-        public async Task DeleteAsync(int id)
+        public async Task DeleteAsync(Guid id)
         {
              var user = await _gymBroDbContext.Users.FindAsync(id);
             if (user != null)
@@ -30,7 +30,7 @@ namespace GymBro_Backend_API.Repositories.Implementations
             }
         }
 
-        public async Task<User> GetAsync(int id)
+        public async Task<User> GetAsync(Guid id)
         {
             var user = await _gymBroDbContext.Users.FindAsync(id);
             return user;

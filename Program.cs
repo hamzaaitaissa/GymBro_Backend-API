@@ -1,4 +1,5 @@
 using GymBro_Backend_API.Data;
+using GymBro_Backend_API.Mapping;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +11,8 @@ builder.Services.AddDbContext<GymBroDbContext>(options =>
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
+
+builder.Services.AddAutoMapper(typeof(UserProfile).Assembly);
 
 var app = builder.Build();
 

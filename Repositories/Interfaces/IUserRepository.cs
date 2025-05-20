@@ -6,8 +6,8 @@ namespace GymBro_Backend_API.Repositories.Interfaces
     {
         Task<User> AddAsync(User user);
         Task<User> UpdateAsync(User user);
-        Task DeleteAsync(int id);
-        Task<User> GetAsync(int id);
+        Task DeleteAsync(Guid id);
+        Task<User> GetAsync(Guid id);
 
     }
 }
